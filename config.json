@@ -1,0 +1,8 @@
+{
+  "name": "snow-pile-analysis",
+  "catalogueEndpoint": "https://urbreath.virtualcitymap.de/minioproxy",
+  "allowMinioUpload": true,
+  "minioEndpoint": "https://urbreath.virtualcitymap.de/minioproxy",
+  "minioBucketName": "vcs-analysis",
+  "version": "^1.0.0"
+}
