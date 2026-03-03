@@ -423,18 +423,18 @@ const gy = [
   [0, 0, 0]
 ], z8 = [
   { name: "Snowpile", shape: gy },
-  { name: "Satteldach", shape: dy },
-  { name: "Nurdach", shape: py },
-  { name: "Pultdach", shape: vy },
-  { name: "Pultdach versetzt", shape: my },
-  { name: "Flachdach", shape: wy },
-  { name: "Butterfly", shape: By },
-  { name: "Tonnendach", shape: yy },
-  { name: "Mansarddach", shape: xy },
-  { name: "Frackdach", shape: by },
-  { name: "Sheddach", shape: Cy },
-  { name: "Paralleldach", shape: Ey },
-  { name: "Grabendach", shape: My }
+  { name: "saddle roof", shape: dy },
+  { name: "hip roof", shape: py },
+  { name: "shed roof", shape: vy },
+  { name: "offset shed roof", shape: my },
+  { name: "flat roof", shape: wy },
+  { name: "butterfly roof", shape: By },
+  { name: "barrel roof", shape: yy },
+  { name: "mansard roof", shape: xy },
+  { name: "gabled roof", shape: by },
+  { name: "shed roof", shape: Cy },
+  { name: "parallel roof", shape: Ey },
+  { name: "hipped roof", shape: My }
 ];
 function Iy(t) {
   let e = 1 / 0, A = 0, i = [t[0], t[1]], n = [t[0], t[1]];
@@ -27674,7 +27674,7 @@ const nC = D8({
           285
         );
       const Je = /* @__PURE__ */ new Date(), Ke = `${Je.getFullYear()}-${String(Je.getMonth() + 1).padStart(2, "0")}-${String(Je.getDate()).padStart(2, "0")}-${String(Je.getHours()).padStart(2, "0")}-${String(Je.getMinutes()).padStart(2, "0")}-${String(Je.getSeconds()).padStart(2, "0")}`, rt = `snowpileMelt-${Ke}.pdf`;
-      Be && ae.save(`snowpileMelt-${year}.pdf`);
+      Be && ae.save(rt);
       const tt = ae.output("blob");
       return ue.value = {
         blob: tt,
