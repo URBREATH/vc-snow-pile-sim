@@ -1,0 +1,121 @@
+{
+  "snowpile": {
+    "title": "Snedyngest Analyse",
+    "description": "Snedyngest-analysen er et værktøj, der gør det muligt for brugere at oprette en snedyngest i en 3D-scene. Det muliggør smelteanalyse ved at tage vejrforhold i betragtning og beregner mængden af smeltevand, der opstår ved sneens smeltning.",
+    "help-title": "Analyse af Snedyngesmelting",
+    "date": "Dato",
+    "dateTooltip": "Vælg den dato, hvorfra snesmeltningsanalysen skal udføres.",
+    "location": "Placering",
+    "type": "Snedyngestype",
+    "locationTooltip": "Vælg snedyngens placering. Dette bruges til smelteanalysen.",
+    "typeTooltip": "Vælg typen af snedyngen. Dette bruges til smelteanalysen.",
+    "height": "Snedyngens højde",
+    "heightTooltip": "Højde på snedyngen i meter. Dette bruges til smelteanalysen.",
+    "hint1": {
+      "title": "Vælg dato",
+      "description": "En snesmeltningsanalyse udføres for den valgte dato."
+    },
+    "hint2": {
+      "title": "Vælg type",
+      "description": "Tegn et område på kortet, hvor snedyngen er placeret."
+    },
+    "hint3": {
+      "title": "Valgfrit: Indtast polygongeometri",
+      "description": "Indtast polygongeometrien for snedyngen. Maksimalt 4 punkter..."
+    },
+    "drawGeometry": "Tegn snedyngen",
+    "drawGeometryTooltip": "Tegn snedyngen på kortet for at udføre en smelteanalyse.",
+    "enterGeometry": "Indtast polygongeometri",
+    "enterGeometryTooltip": "Indtast polygongeometrien for snedyngen. Maksimalt 4 punkter...",
+    "showResults": "Vis resultater",
+    "runAnalysis": "Start",
+    "draw": {
+      "areaSelection": "Vælg område",
+      "drawBBox": "Tegn rektangel",
+      "drawPolygon": "Tegn polygon"
+    },
+    "resultWindow": {
+      "title": "Resultater af snedyngest-analysen",
+      "description": "Resultaterne af snedyngest-analysen vises her. Du kan se resultater for forskellige tidsperioder og lysforhold.",
+      "exportButton": "Eksporter resultater",
+      "exportButtonTooltip": "Eksporterer snedyngest-analysens resultater som PDF",
+      "time": "Tid",
+      "overlayTitle": "Indtast filnavn og vælg eksportmuligheder for billeder",
+      "overlayText": "Indtast venligst filnavnet til eksporten her. Filnavnet suppleres med beregningsdatoen. Filnavnet kan f.eks. angive, om beregningen blev udført før eller efter planlægning.\n Indstilling for om scenebilleder skal integreres i PDF’en.",
+      "overlayButtonLabel": "Filnavn",
+      "exportImagesLabel": "Eksporter diagrammer",
+      "exportImagesTooltip": "Integrerer diagrammerne fra snedyngest-analysen i PDF-eksporten (kræver mere tid)",
+      "uploadButton": "URBREATH",
+      "uploadButtonTooltip": "Upload rapport til URBREATH MinIO",
+      "uploadDialog": {
+        "title": "Upload til MinIO",
+        "selectItems": "Vælg de elementer, du vil uploade.",
+        "reportLabel": "Snedyngest-analysens rapport (PDF)",
+        "geojsonLabel": "Geometri for snedyngen (GeoJSON)",
+        "analysisResultLabel": "Analyse resultater (JSON / CSV)",
+        "fileSuffixLabel": "Suffiks for filnavne",
+        "fileSuffixPlaceholder": "Efterlad tomt for standardsuffiks",
+        "fileSuffixCurrent": "Efterlad tomt for at bruge dette:",
+        "requiredFilesLabel": "Opsummering og parametre kræver en eksisterende rapport eller PDF-indstillingen."
+      }
+    },
+    "graph1": {
+      "graphTitle": "Aktuelt smeltevand",
+      "yaxisTitle": "Dagligt smeltevand [m³]",
+      "xaxisTitle": "Dag i året"
+    },
+    "graph2": {
+      "graphTitle": "Vejrforhold",
+      "yaxisTitle": "Vejrdata",
+      "yaxisTitle1": "Temperatur",
+      "yaxisTitle2": "Nedbør",
+      "yaxisTitle3": "Solskinstimer",
+      "xaxisTitle": "Dag i året"
+    },
+    "pdf": {
+      "page": "Side",
+      "titlePage": {
+        "subTitle": "Snesmeltningsanalyse",
+        "subTitle2": "Resultater af snesmeltningsberegningen",
+        "dateTitle": "Dato for gennemført beregning:"
+      },
+      "tableSection": "Tabel med resultaterne af snesmeltningsanalysen",
+      "diagramSection": "Diagram med resultaterne af snesmeltningsanalysen",
+      "imageSection": "Billeder med resultaterne af snesmeltningsanalysen",
+      "tableHeader": {
+        "col0": "Dato",
+        "col1": "Resterende snevolumen [m³]",
+        "col2": "Resterende højde",
+        "col3": "Smeltevand [m³]",
+        "col4": "Total smeltevand [m³]",
+        "col5": "Omgivelsestemperatur [°C]",
+        "col6": "Nedbør [mm]",
+        "col7": "Solskin [t]"
+      },
+      "bafSite": "Beregningsområde",
+      "bafSiteCaption": "Billede: Skærmbillede af beregningsområdet",
+      "bafSiteCaptionSRC": "Kilde:",
+      "bafSiteCaptionExport": "Polygongeometri for beregningsområdet",
+      "lastPage": {
+        "title": "Information",
+        "text": "Snedyngest-analysen er et værktøj, der gør det muligt for brugere at skabe en snedyngest i en 3D-scene. Den muliggør smelteanalyse ved at tage vejrforhold i betragtning og beregner mængden af smeltevand fra snedyngens smeltning. Analysen tager højde for flere faktorer som snedyngens højde, analysedatoen og miljøforholdene. Resultaterne præsenteres i form af diagrammer og tabeller, der viser smeltehastigheden og anden relevant information. Brugere kan også eksportere resultaterne som PDF til yderligere analyse eller rapportering."
+      }
+    },
+    "roofTypes": {
+      "snowpile": "sneehob",
+      "saddleRoof": "Sadeltag",
+      "hipRoof": "Valmtag",
+      "nurRoof": "Pulttag",
+      "shedRoof": "Skurtag",
+      "offsetShedRoof": "Forskudt skurtag",
+      "flatRoof": "Pladtag",
+      "butterflyRoof": "Sommerfugletag",
+      "barrelRoof": "Tøndetag",
+      "mansardRoof": "Mansardtag",
+      "saltboxRoof": "Saltboxtag",
+      "sawtoothRoof": "Savtakket tag",
+      "parallelRoof": "Paralleltag",
+      "gableOnGableRoof": "Gable-on-gable tag"
+    }
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "snowpile": {
+    "title": "Analiza Movilei de Zăpadă",
+    "description": "Analiza Movilei de Zăpadă este un instrument care permite utilizatorilor să creeze o movilă de zăpadă într-o scenă 3D. Acesta permite analiza topirii, ținând cont de condițiile meteorologice, și calculează cantitatea de apă rezultată din topirea movilei de zăpadă.",
+    "help-title": "Analiza Topirii Movilei de Zăpadă",
+    "date": "Dată",
+    "dateTooltip": "Selectați data de la care ar trebui efectuată analiza topirii zăpezii.",
+    "location": "Locație",
+    "type": "Tip movilă de zăpadă",
+    "locationTooltip": "Selectați locația movilei de zăpadă. Acest lucru este utilizat pentru analiza topirii.",
+    "typeTooltip": "Selectați tipul movilei de zăpadă. Acest lucru este utilizat pentru analiza topirii.",
+    "height": "Înălțimea movilei de zăpadă",
+    "heightTooltip": "Înălțimea movilei de zăpadă în metri. Acest parametru este utilizat pentru analiză.",
+    "hint1": {
+      "title": "Selectați data",
+      "description": "O analiză a topirii zăpezii va fi realizată pentru data selectată."
+    },
+    "hint2": {
+      "title": "Selectați tipul",
+      "description": "Desenați o zonă pe hartă unde se află movila de zăpadă."
+    },
+    "hint3": {
+      "title": "Opțional: Introduceți geometria poligonului",
+      "description": "Introduceți geometria poligonului movilei de zăpadă. Maxim 4 puncte..."
+    },
+    "drawGeometry": "Desenează movila de zăpadă",
+    "drawGeometryTooltip": "Desenați movila de zăpadă pe hartă pentru a efectua analiza topirii.",
+    "enterGeometry": "Introduceți geometria poligonului",
+    "enterGeometryTooltip": "Introduceți geometria poligonului movilei de zăpadă. Maxim 4 puncte...",
+    "showResults": "Afișează rezultatele",
+    "runAnalysis": "Start",
+    "draw": {
+      "areaSelection": "Selectați zona",
+      "drawBBox": "Desenați dreptunghi",
+      "drawPolygon": "Desenați poligon"
+    },
+    "resultWindow": {
+      "title": "Rezultatele analizei movilei de zăpadă",
+      "description": "Rezultatele analizei movilei de zăpadă sunt afișate aici. Puteți vizualiza rezultatele pentru diferite perioade de timp și condiții de iluminare.",
+      "exportButton": "Exportă rezultatele",
+      "exportButtonTooltip": "Exportă rezultatele analizei movilei de zăpadă ca PDF",
+      "time": "Oră",
+      "overlayTitle": "Introduceți numele fișierului și selectați opțiunea de export al imaginilor",
+      "overlayText": "Introduceți aici numele fișierului pentru export. Numele va fi completat cu data calculului. Numele poate indica, de exemplu, dacă analiza a fost realizată înainte sau după planificare.\n Setare pentru integrarea imaginilor scenei în PDF.",
+      "overlayButtonLabel": "Nume fișier",
+      "exportImagesLabel": "Exportă diagramele",
+      "exportImagesTooltip": "Integrează diagramele analizei movilei de zăpadă în exportul PDF (necesită mai mult timp)",
+      "uploadButton": "URBREATH",
+      "uploadButtonTooltip": "Încarcă raportul în URBREATH MinIO",
+      "uploadDialog": {
+        "title": "Încărcare în MinIO",
+        "selectItems": "Selectați elementele pe care doriți să le încărcați.",
+        "reportLabel": "Raportul analizei movilei de zăpadă (PDF)",
+        "geojsonLabel": "Geometria movilei de zăpadă (GeoJSON)",
+        "analysisResultLabel": "Rezultatele analizei (JSON / CSV)",
+        "fileSuffixLabel": "Sufix pentru numele fișierelor",
+        "fileSuffixPlaceholder": "Lăsați gol pentru sufixul implicit",
+        "fileSuffixCurrent": "Lăsați gol pentru a folosi acesta:",
+        "requiredFilesLabel": "Rezumatul și parametrii necesită un raport existent sau opțiunea PDF."
+      }
+    },
+    "graph1": {
+      "graphTitle": "Cantitatea curentă de apă de topire",
+      "yaxisTitle": "Apă de topire zilnică [m³]",
+      "xaxisTitle": "Ziua anului"
+    },
+    "graph2": {
+      "graphTitle": "Condiții meteorologice",
+      "yaxisTitle": "Date meteorologice",
+      "yaxisTitle1": "Temperatură",
+      "yaxisTitle2": "Precipitații",
+      "yaxisTitle3": "Durata de însorire",
+      "xaxisTitle": "Ziua anului"
+    },
+    "pdf": {
+      "page": "Pagină",
+      "titlePage": {
+        "subTitle": "Analiza topirii zăpezii",
+        "subTitle2": "Rezultatele calculului topirii zăpezii",
+        "dateTitle": "Data efectuării calculului:"
+      },
+      "tableSection": "Tabel cu rezultatele analizei topirii zăpezii",
+      "diagramSection": "Diagramă cu rezultatele analizei topirii zăpezii",
+      "imageSection": "Imagini cu rezultatele analizei topirii zăpezii",
+      "tableHeader": {
+        "col0": "Dată",
+        "col1": "Volum de zăpadă rămas [m³]",
+        "col2": "Înălțime rămasă",
+        "col3": "Apă de topire [m³]",
+        "col4": "Apă de topire totală [m³]",
+        "col5": "Temperatura ambiantă [°C]",
+        "col6": "Precipitații [mm]",
+        "col7": "Ore de soare [h]"
+      },
+      "bafSite": "Zona de calcul",
+      "bafSiteCaption": "Imagine: Captură de ecran a zonei de calcul",
+      "bafSiteCaptionSRC": "Sursă:",
+      "bafSiteCaptionExport": "Geometria poligonală a zonei de calcul",
+      "lastPage": {
+        "title": "Informații",
+        "text": "Analiza movilei de zăpadă este un instrument care permite utilizatorilor să creeze o movilă de zăpadă într-o scenă 3D. Aceasta permite analiza topirii, luând în considerare condițiile meteorologice și calculând cantitatea de apă rezultată. Analiza ia în calcul factori precum înălțimea movilei, data analizei și condițiile de mediu. Rezultatele sunt prezentate sub formă de diagrame și tabele care arată rata de topire și alte informații relevante. Utilizatorii pot, de asemenea, exporta rezultatele în format PDF pentru analize suplimentare sau raportare."
+      }
+    },
+    "roofTypes": {
+      "snowpile": "Movilă de zăpadă",
+      "saddleRoof": "Acoperiș șa",
+      "hipRoof": "Acoperiș șold",
+      "nurRoof": "Acoperiș cu o singură pantă",
+      "shedRoof": "Acoperiș tip magazie",
+      "offsetShedRoof": "Acoperiș tip magazie decalată",
+      "flatRoof": "Acoperiș plat",
+      "butterflyRoof": "Acoperiș fluture",
+      "barrelRoof": "Acoperiș butoi",
+      "mansardRoof": "Acoperiș mansardat",
+      "saltboxRoof": "Acoperiș saltbox",
+      "sawtoothRoof": "Acoperiș cu dinți de fierăstrău",
+      "parallelRoof": "Acoperiș paralel",
+      "gableOnGableRoof": "Acoperiș cu două pante suprapuse"
+    }
+  }
+}

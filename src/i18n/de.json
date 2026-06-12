@@ -1,0 +1,119 @@
+{
+  "snowpile": {
+    "title": "Schneehaufenanalyse",
+    "description": "Die Schneehaufenanalyse ist ein Werkzeug, mit dem Benutzer einen Schneehaufen in einer 3D-Szene erstellen können. Es ermöglicht die Durchführung einer Schmelzanalyse, indem Wetterbedingungen berücksichtigt und die Menge an Schmelzwasser aus dem Schmelzen des Schneehaufens berechnet wird.",
+    "help-title": "Schneehaufen-Schmelzanalyse",
+    "date": "Datum",
+    "dateTooltip": "Wählen Sie das Datum aus, von dem an die Schneeschmelzanalyse durchgeführt werden soll.",
+    "location": "Ort",
+    "locationTooltip": "Wählen Sie den Ort aus, an dem sich der Schneehaufen befindet. Dies wird für die Schmelzanalyse verwendet.",
+    "typeTooltip": "Wählen Sie den Typ des Schneehaufens aus. Dies wird für die Schmelzanalyse verwendet.",
+    "type": "Schneehaufentyp",
+    "height": "Höhe des Schneehaufens",
+    "heightTooltip": "Höhe des Schneehaufens in Metern. Diese wird für die Schmelzanalyse verwendet.",
+    "hint1": {
+      "title": "Datum auswählen",
+      "description": "Für das gewählte Datum wird eine Schneeschmelzanalyse gemacht."
+    },
+    "hint2": {
+      "title": "Typ auswählen",
+      "description": "Zeichnen Sie einen Bereich in der Karte, an dem sich der Schneehaufen befindet."
+    },
+    "hint3": {
+      "title": "Optional: Polygongeometrie eintragen",
+      "description": "Eintragen der Polygongeometrie des Schneehaufens. Maximal 4 Punkte..."
+    },
+    "drawGeometry": "Schneehaufen zeichnen",
+    "drawGeometryTooltip": "Zeichnen Sie den Schneehaufen in der Karte, um für diesen eine Schmelzanalyse durchzuführen.",
+    "enterGeometry": "Polygongeometrie eingeben",
+    "enterGeometryTooltip": "Eintragen der Polygongeometrie des Schneehaufens. Maximal 4 Punkte...",
+    "showResults": "Ergebnisse anzeigen",
+    "runAnalysis": "Starten",
+    "draw": {
+      "areaSelection": "Fläche auswählen",
+      "drawBBox": "Rechteck zeichnen",
+      "drawPolygon": "Polygon zeichnen"
+    },
+    "resultWindow": {
+      "title": "Schneehaufenanalyse",
+      "description": "Die Ergebnisse der Schneehaufenanalyse werden hier angezeigt. Sie können die Ergebnisse für verschiedene Zeiträume und Lichtverhältnisse anzeigen.",
+      "exportButton": "Ergebnisse exportieren",
+      "exportButtonTooltip": "Exportiert die Ergebnisse der Schneehaufenanalyse als PDF",
+      "time": "Zeit",
+      "overlayTitle": "Dateiname angeben und Exportoption für Bilder wählen",
+      "overlayText": "Bitte hier den Dateinamen für den Export angeben. Der Dateiname wird mit dem Datum der Berechnung ergänzt. Der Dateiname kann beispielsweise ausdrücken, ob die Berechnung vor oder nach einer Planung durchgeführt wurde.\n Einstellung, ob die Szenenbilder in das PDF integriert werden sollen.",
+      "overlayButtonLabel": "Dateiname",
+      "exportImagesLabel": "Diagramme exportieren",
+      "exportImagesTooltip": "Integriert die Diagramme der Schneehaufenanalyse in den PDF-Export (erfordert mehr Zeit)",
+      "uploadButton": "URBREATH",
+      "uploadButtonTooltip": "Bericht nach URBREATH MinIO hochladen",
+      "uploadDialog": {
+        "title": "Upload zu MinIO",
+        "selectItems": "Wählen Sie die Elemente aus, die Sie hochladen möchten.",
+        "reportLabel": "Schneehaufenanalysebericht (PDF)",
+        "geojsonLabel": "Geometrie des Schneehaufens (GeoJSON)",
+        "analysisResultLabel": "Analyseergebnisse (JSON / CSV)",
+        "fileSuffixLabel": "Suffix für Dateinamen",
+        "fileSuffixPlaceholder": "Leer lassen für Standard-Suffix",
+        "fileSuffixCurrent": "Leer lassen, um das hier zu verwenden:",
+        "requiredFilesLabel": "Zusammenfassung und Parameter erfordern einen vorhandenen Bericht oder die PDF-Option."
+      }
+    },
+    "graph1": {
+      "graphTitle": "tägliches Schmelzwasser",
+      "yaxisTitle": "tägliches Schmelzwasser [m³]",
+      "xaxisTitle": "Tag des Jahres"
+    },
+    "graph2": {
+      "graphTitle": "Wetterbedingungen",
+      "yaxisTitle": "Wetterdaten",
+      "yaxisTitle1": "Temperatur",
+      "yaxisTitle2": "Niederschlag",
+      "yaxisTitle3": "Sonnenscheindauer",
+      "xaxisTitle": "Tag des Jahres"
+    },
+    "pdf": {
+      "page": "Seite",
+      "titlePage": {
+        "subTitle": "Analyse der Schneeschmelze",
+        "subTitle2": "Ergebnisse der Schneeschmelzberechnung",
+        "dateTitle": "Datum an dem die Berechnung durchgeführt wurde:"
+      },
+      "tableSection": "Tabelle mit den Ergebnissen der Schneeschmelzanalyse",
+      "diagramSection": "Diagramm mit den Ergebnissen der Schneeschmelzanalyse",
+      "imageSection": "Bilder mit den Ergebnissen der Schneeschmelzsanalyse",
+      "tableHeader": {
+        "col0": "Datum",
+        "col1": "verbleibende Schneemenge [m³]",
+        "col2": "verbleibende Höhe",
+        "col3": "Schmelzwasser [m³]",
+        "col4": "gesamtes Schmelzwasser [m³]",
+        "col5": "Umgebungstemperatur [°C]",
+        "col6": "Regenmenge [mm]",
+        "col7": "Sonnenschein [h]"
+      },
+      "bafSite": "Berechnungsgebiet",
+      "bafSiteCaption": "Bild: Bildschirmfoto des Berechnungsgebietes",
+      "bafSiteCaptionSRC": "Quelle:",
+      "bafSiteCaptionExport": "Polygongeometrie des Berechnungsgebietes",
+      "lastPage": {
+        "title": "Information",
+        "text": "Die Schneehaufenanalyse ist ein Werkzeug, mit dem Benutzer einen Schneehaufen in einer 3D-Szene erstellen können. Es ermöglicht die Durchführung einer Schmelzanalyse, indem Wetterbedingungen berücksichtigt und die Menge an Schmelzwasser aus dem Schmelzen des Schneehaufens berechnet wird. Die Analyse berücksichtigt verschiedene Faktoren wie die Höhe des Schneehaufens, das Datum der Analyse und die Umgebungsbedingungen. Die Ergebnisse werden in Form von Diagrammen und Tabellen präsentiert, die die Schmelzrate und andere relevante Informationen anzeigen. Benutzer können die Ergebnisse auch als PDF exportieren, um sie für weitere Analysen oder Berichte zu verwenden."
+      }
+    },
+    "roofTypes": {
+      "saddleRoof": "Satteldach",
+      "nurRoof": "Nurdach",
+      "pentRoof": "Pultdach",
+      "offsetShedRoof": "Pultdach versetzt",
+      "flatRoof": "Flachdach",
+      "butterflyRoof": "Butterfly",
+      "barrelRoof": "Tonnendach",
+      "mansardRoof": "Mansarddach",
+      "saltboxRoof": "Frackdach",
+      "shedRoof": "Sheddach",
+      "parallelRoof": "Paralleldach",
+      "gableOnGableRoof": "Grabendach"
+    }
+  }
+}

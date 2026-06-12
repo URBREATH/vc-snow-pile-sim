@@ -1,0 +1,121 @@
+{
+  "snowpile": {
+    "title": "Analisi del Cumulo di Neve",
+    "description": "L'Analisi del Cumulo di Neve è uno strumento che consente agli utenti di creare un cumulo di neve in una scena 3D. Permette l’analisi della fusione tenendo conto delle condizioni meteorologiche e calcola la quantità di acqua di fusione risultante dallo scioglimento del cumulo di neve.",
+    "help-title": "Analisi della Fusione del Cumulo di Neve",
+    "date": "Data",
+    "dateTooltip": "Seleziona la data da cui eseguire l’analisi della fusione della neve.",
+    "location": "Località",
+    "type": "Tipo di cumulo di neve",
+    "locationTooltip": "Seleziona la località del cumulo di neve. Questo dato viene utilizzato per l’analisi della fusione.",
+    "typeTooltip": "Seleziona il tipo di cumulo di neve. Questo dato viene utilizzato per l’analisi.",
+    "height": "Altezza del cumulo di neve",
+    "heightTooltip": "Altezza del cumulo di neve in metri. Questo parametro è utilizzato per l’analisi.",
+    "hint1": {
+      "title": "Seleziona una data",
+      "description": "Verrà eseguita un’analisi della fusione della neve per la data selezionata."
+    },
+    "hint2": {
+      "title": "Seleziona il tipo",
+      "description": "Disegna un’area sulla mappa in cui si trova il cumulo di neve."
+    },
+    "hint3": {
+      "title": "Opzionale: Inserisci la geometria del poligono",
+      "description": "Inserisci la geometria poligonale del cumulo di neve. Massimo 4 punti..."
+    },
+    "drawGeometry": "Disegna cumulo di neve",
+    "drawGeometryTooltip": "Disegna il cumulo di neve sulla mappa per eseguire l’analisi della fusione.",
+    "enterGeometry": "Inserisci geometria poligonale",
+    "enterGeometryTooltip": "Inserisci la geometria poligonale del cumulo di neve. Massimo 4 punti...",
+    "showResults": "Mostra risultati",
+    "runAnalysis": "Avvia",
+    "draw": {
+      "areaSelection": "Seleziona area",
+      "drawBBox": "Disegna rettangolo",
+      "drawPolygon": "Disegna poligono"
+    },
+    "resultWindow": {
+      "title": "Risultati dell’Analisi del Cumulo di Neve",
+      "description": "I risultati dell’analisi del cumulo di neve vengono mostrati qui. Puoi visualizzare i risultati per diversi periodi di tempo e condizioni di illuminazione.",
+      "exportButton": "Esporta risultati",
+      "exportButtonTooltip": "Esporta i risultati dell’analisi del cumulo di neve come PDF",
+      "time": "Orario",
+      "overlayTitle": "Inserisci il nome del file e scegli l’opzione di esportazione delle immagini",
+      "overlayText": "Inserisci qui il nome del file per l’esportazione. Il nome verrà completato con la data del calcolo. Il nome può indicare, ad esempio, se il calcolo è stato eseguito prima o dopo la pianificazione.\n Impostazione per decidere se includere le immagini della scena nel PDF.",
+      "overlayButtonLabel": "Nome file",
+      "exportImagesLabel": "Esporta diagrammi",
+      "exportImagesTooltip": "Integra i diagrammi dell’analisi del cumulo di neve nell’esportazione PDF (richiede più tempo)",
+      "uploadButton": "URBREATH",
+      "uploadButtonTooltip": "Carica il report su URBREATH MinIO",
+      "uploadDialog": {
+        "title": "Carica su MinIO",
+        "selectItems": "Seleziona gli elementi da caricare.",
+        "reportLabel": "Report analisi cumulo di neve (PDF)",
+        "geojsonLabel": "Geometria del cumulo di neve (GeoJSON)",
+        "analysisResultLabel": "Risultati dell’analisi (JSON / CSV)",
+        "fileSuffixLabel": "Suffisso per i nomi dei file",
+        "fileSuffixPlaceholder": "Lascia vuoto per usare il suffisso predefinito",
+        "fileSuffixCurrent": "Lascia vuoto per utilizzare questo:",
+        "requiredFilesLabel": "Riepilogo e parametri richiedono un report esistente o l’opzione PDF."
+      }
+    },
+    "graph1": {
+      "graphTitle": "Acqua di fusione attuale",
+      "yaxisTitle": "Acqua di fusione giornaliera [m³]",
+      "xaxisTitle": "Giorno dell’anno"
+    },
+    "graph2": {
+      "graphTitle": "Condizioni meteorologiche",
+      "yaxisTitle": "Dati meteorologici",
+      "yaxisTitle1": "Temperatura",
+      "yaxisTitle2": "Precipitazioni",
+      "yaxisTitle3": "Durata dell’irraggiamento solare",
+      "xaxisTitle": "Giorno dell’anno"
+    },
+    "pdf": {
+      "page": "Pagina",
+      "titlePage": {
+        "subTitle": "Analisi della fusione della neve",
+        "subTitle2": "Risultati del calcolo della fusione della neve",
+        "dateTitle": "Data di esecuzione del calcolo:"
+      },
+      "tableSection": "Tabella con i risultati dell’analisi della fusione della neve",
+      "diagramSection": "Diagramma con i risultati dell’analisi della fusione della neve",
+      "imageSection": "Immagini con i risultati dell’analisi della fusione della neve",
+      "tableHeader": {
+        "col0": "Data",
+        "col1": "Volume di neve residua [m³]",
+        "col2": "Altezza residua",
+        "col3": "Acqua di fusione [m³]",
+        "col4": "Acqua di fusione totale [m³]",
+        "col5": "Temperatura ambiente [°C]",
+        "col6": "Precipitazioni [mm]",
+        "col7": "Ore di sole [h]"
+      },
+      "bafSite": "Area di calcolo",
+      "bafSiteCaption": "Immagine: schermata dell’area di calcolo",
+      "bafSiteCaptionSRC": "Fonte:",
+      "bafSiteCaptionExport": "Geometria poligonale dell’area di calcolo",
+      "lastPage": {
+        "title": "Informazioni",
+        "text": "L’analisi del cumulo di neve è uno strumento che permette agli utenti di creare un cumulo di neve in una scena 3D. Consente l’analisi della fusione considerando le condizioni meteorologiche e calcola la quantità di acqua prodotta dalla fusione. L’analisi tiene conto di vari fattori come l’altezza del cumulo, la data dell’analisi e le condizioni ambientali. I risultati vengono presentati tramite diagrammi e tabelle che mostrano la velocità di fusione e altre informazioni rilevanti. Gli utenti possono anche esportare i risultati in PDF per ulteriori analisi o report."
+      }
+    },
+    "roofTypes": {
+      "snowpile": "Cumulo di neve",
+      "saddleRoof": "Tetto a sella",
+      "hipRoof": "Tetto a padiglione",
+      "nurRoof": "Tetto a falda unica",
+      "shedRoof": "Tetto a capanna",
+      "offsetShedRoof": "Tetto a capanna sfalsato",
+      "flatRoof": "Tetto piano",
+      "butterflyRoof": "Tetto a farfalla",
+      "barrelRoof": "Tetto a botte",
+      "mansardRoof": "Tetto mansardato",
+      "saltboxRoof": "Tetto a cassetta",
+      "sawtoothRoof": "Tetto a denti di sega",
+      "parallelRoof": "Tetto parallelo",
+      "gableOnGableRoof": "Tetto a capanna su capanna"
+    }
+  }
+}

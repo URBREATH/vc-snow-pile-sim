@@ -1,0 +1,121 @@
+{
+  "snowpile": {
+    "title": "Lumikasan analyysi",
+    "description": "Lumikasan analyysi on työkalu, jonka avulla käyttäjät voivat luoda lumikasan 3D-näkymään. Se mahdollistaa sulamisanalyysin huomioimalla sääolosuhteet ja laskee lumikasan sulamisesta syntyvän sulamisveden määrän.",
+    "help-title": "Lumikasan sulamisanalyysi",
+    "date": "Päivämäärä",
+    "dateTooltip": "Valitse päivämäärä, josta lähtien sulamisanalyysi suoritetaan.",
+    "location": "Sijainti",
+    "type": "Lumikasan tyyppi",
+    "locationTooltip": "Valitse lumikasan sijainti. Tätä käytetään sulamisanalyysissä.",
+    "typeTooltip": "Valitse lumikasan tyyppi. Tätä käytetään sulamisanalyysissä.",
+    "height": "Lumikasan korkeus",
+    "heightTooltip": "Lumikasan korkeus metreinä. Tätä käytetään sulamisanalyysissä.",
+    "hint1": {
+      "title": "Valitse päivämäärä",
+      "description": "Valitulle päivämäärälle suoritetaan sulamisanalyysi."
+    },
+    "hint2": {
+      "title": "Valitse tyyppi",
+      "description": "Piirrä kartalle alue, jossa lumikasa sijaitsee."
+    },
+    "hint3": {
+      "title": "Valinnainen: Syötä polygonin geometria",
+      "description": "Syötä lumikasan polygonigeometria. Enintään 4 pistettä..."
+    },
+    "drawGeometry": "Piirrä lumikasa",
+    "drawGeometryTooltip": "Piirrä lumikasa kartalle sulamisanalyysin suorittamiseksi.",
+    "enterGeometry": "Syötä polygonin geometria",
+    "enterGeometryTooltip": "Syötä lumikasan polygonigeometria. Enintään 4 pistettä...",
+    "showResults": "Näytä tulokset",
+    "runAnalysis": "Aloita",
+    "draw": {
+      "areaSelection": "Valitse alue",
+      "drawBBox": "Piirrä suorakulmio",
+      "drawPolygon": "Piirrä polygoni"
+    },
+    "resultWindow": {
+      "title": "Lumikasan analyysin tulokset",
+      "description": "Tässä näytetään lumikasan analyysin tulokset. Voit tarkastella tuloksia eri ajanjaksoilta ja valaistusolosuhteilta.",
+      "exportButton": "Vie tulokset",
+      "exportButtonTooltip": "Vie lumikasan analyysin tulokset PDF-tiedostona",
+      "time": "Aika",
+      "overlayTitle": "Syötä tiedoston nimi ja valitse kuvien vientiasetukset",
+      "overlayText": "Syötä tähän tiedoston nimi vientiä varten. Tiedostonimeen lisätään laskentapäivä. Nimi voi esimerkiksi kertoa, onko laskenta tehty ennen vai jälkeen suunnittelun.\n Asetus sille, integroidaanko näkymäkuvat PDF-tiedostoon.",
+      "overlayButtonLabel": "Tiedoston nimi",
+      "exportImagesLabel": "Vie diagrammit",
+      "exportImagesTooltip": "Sisällyttää lumikasaanalyysin diagrammit PDF-vientiin (vaatii enemmän aikaa)",
+      "uploadButton": "URBREATH",
+      "uploadButtonTooltip": "Lataa raportti URBREATH MinIOon",
+      "uploadDialog": {
+        "title": "Lataa MinIOon",
+        "selectItems": "Valitse ladattavat kohteet.",
+        "reportLabel": "Lumikasan analyysiraportti (PDF)",
+        "geojsonLabel": "Lumikasan geometria (GeoJSON)",
+        "analysisResultLabel": "Analyysitulokset (JSON / CSV)",
+        "fileSuffixLabel": "Tiedostonimen loppuliite",
+        "fileSuffixPlaceholder": "Jätä tyhjäksi käyttääksesi oletusloppuliitettä",
+        "fileSuffixCurrent": "Jätä tyhjäksi käyttääksesi tätä:",
+        "requiredFilesLabel": "Yhteenveto ja parametrit vaativat olemassa olevan raportin tai PDF-asetuksen."
+      }
+    },
+    "graph1": {
+      "graphTitle": "Nykyinen sulamisvesi",
+      "yaxisTitle": "Päivittäinen sulamisvesi [m³]",
+      "xaxisTitle": "Vuoden päivä"
+    },
+    "graph2": {
+      "graphTitle": "Sääolosuhteet",
+      "yaxisTitle": "Säätiedot",
+      "yaxisTitle1": "Lämpötila",
+      "yaxisTitle2": "Sademäärä",
+      "yaxisTitle3": "Auringonpaisteen kesto",
+      "xaxisTitle": "Vuoden päivä"
+    },
+    "pdf": {
+      "page": "Sivu",
+      "titlePage": {
+        "subTitle": "Lumensulamisen analyysi",
+        "subTitle2": "Lumensulatuslaskennan tulokset",
+        "dateTitle": "Laskennan suorituspäivä:"
+      },
+      "tableSection": "Taulukko lumensulamisen analyysin tuloksista",
+      "diagramSection": "Diagrammi lumensulamisen analyysin tuloksista",
+      "imageSection": "Kuvat lumensulamisen analyysin tuloksista",
+      "tableHeader": {
+        "col0": "Päivämäärä",
+        "col1": "Jäljellä oleva lumen tilavuus [m³]",
+        "col2": "Jäljellä oleva korkeus",
+        "col3": "Sulamisvesi [m³]",
+        "col4": "Kokonais­sulamisvesi [m³]",
+        "col5": "Lämpötila [°C]",
+        "col6": "Sademäärä [mm]",
+        "col7": "Auringonpaiste [h]"
+      },
+      "bafSite": "Laskenta-alue",
+      "bafSiteCaption": "Kuva: Laskenta-alueen näyttökuva",
+      "bafSiteCaptionSRC": "Lähde:",
+      "bafSiteCaptionExport": "Laskenta-alueen polygonigeometria",
+      "lastPage": {
+        "title": "Tietoa",
+        "text": "Lumikasan analyysi on työkalu, joka mahdollistaa lumikasan luomisen 3D-näkymään. Se mahdollistaa sulamisanalyysin ja laskee sulamisveden määrän ottaen huomioon sääolosuhteet. Analyysi huomioi useita tekijöitä, kuten lumikasan korkeuden, analyysin päivämäärän ja ympäristöolosuhteet. Tulokset esitetään diagrammeina ja taulukkoina, jotka kuvaavat sulamisnopeutta ja muuta olennaista tietoa. Tulokset voidaan myös viedä PDF-tiedostona jatkoanalyysiä tai raportointia varten."
+      }
+    },
+    "roofTypes": {
+      "snowpile": "Lumekasa",
+      "saddleRoof": "Satulakatto",
+      "hipRoof": "Harjakatto",
+      "nurRoof": "Pulpettikatto",
+      "shedRoof": "Varastokatto",
+      "offsetShedRoof": "Siirretty varastokatto",
+      "flatRoof": "Lamekatto",
+      "butterflyRoof": "Perhosenmuotoinen katto",
+      "barrelRoof": "Tynnyrikatto",
+      "mansardRoof": "Mansardikatto",
+      "saltboxRoof": "Suolalaatikko katto",
+      "sawtoothRoof": "Sahalaitakatto",
+      "parallelRoof": "Paralleelikatto",
+      "gableOnGableRoof": "Harjakatto harjan päällä"
+    }
+  }
+}

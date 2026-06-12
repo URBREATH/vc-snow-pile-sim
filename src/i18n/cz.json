@@ -1,0 +1,121 @@
+{
+  "snowpile": {
+    "title": "Analýza sněhové hromady",
+    "description": "Analýza sněhové hromady je nástroj, který uživatelům umožňuje vytvořit sněhovou hromadu ve 3D scéně. Umožňuje analýzu tání s ohledem na povětrnostní podmínky a vypočítává množství tavené vody vzniklé táním sněhové hromady.",
+    "help-title": "Analýza tání sněhové hromady",
+    "date": "Datum",
+    "dateTooltip": "Vyberte datum, od kterého má být provedena analýza tání sněhu.",
+    "location": "Lokalita",
+    "type": "Typ sněhové hromady",
+    "locationTooltip": "Vyberte umístění sněhové hromady. To je použito pro analýzu tání.",
+    "typeTooltip": "Vyberte typ sněhové hromady. To je použito pro analýzu tání.",
+    "height": "Výška sněhové hromady",
+    "heightTooltip": "Výška sněhové hromady v metrech. Toto je použito pro analýzu tání.",
+    "hint1": {
+      "title": "Vyberte datum",
+      "description": "Pro vybrané datum bude provedena analýza tání sněhu."
+    },
+    "hint2": {
+      "title": "Vyberte typ",
+      "description": "Nakreslete oblast na mapě, kde se sněhová hromada nachází."
+    },
+    "hint3": {
+      "title": "Volitelné: Zadejte geometrii polygonu",
+      "description": "Zadejte polygonovou geometrii sněhové hromady. Maximálně 4 body..."
+    },
+    "drawGeometry": "Nakreslit sněhovou hromadu",
+    "drawGeometryTooltip": "Nakreslete sněhovou hromadu na mapu, abyste mohli provést analýzu tání.",
+    "enterGeometry": "Zadat geometrii polygonu",
+    "enterGeometryTooltip": "Zadejte polygonovou geometrii sněhové hromady. Maximálně 4 body...",
+    "showResults": "Zobrazit výsledky",
+    "runAnalysis": "Start",
+    "draw": {
+      "areaSelection": "Vybrat oblast",
+      "drawBBox": "Nakreslit obdélník",
+      "drawPolygon": "Nakreslit polygon"
+    },
+    "resultWindow": {
+      "title": "Výsledky analýzy sněhové hromady",
+      "description": "Zde jsou zobrazeny výsledky analýzy sněhové hromady. Můžete zobrazit výsledky pro různá časová období a světelné podmínky.",
+      "exportButton": "Exportovat výsledky",
+      "exportButtonTooltip": "Exportuje výsledky analýzy sněhové hromady jako PDF",
+      "time": "Čas",
+      "overlayTitle": "Zadejte název souboru a vyberte možnost exportu obrázků",
+      "overlayText": "Zadejte prosím název souboru pro export. Název bude doplněn o datum výpočtu. Název může například uvádět, zda byl výpočet proveden před nebo po plánování.\n Nastavení, zda mají být obrázky scény integrovány do PDF.",
+      "overlayButtonLabel": "Název souboru",
+      "exportImagesLabel": "Exportovat diagramy",
+      "exportImagesTooltip": "Integruje diagramy analýzy sněhové hromady do PDF exportu (může trvat déle)",
+      "uploadButton": "URBREATH",
+      "uploadButtonTooltip": "Nahrát zprávu do URBREATH MinIO",
+      "uploadDialog": {
+        "title": "Nahrát do MinIO",
+        "selectItems": "Vyberte položky, které chcete nahrát.",
+        "reportLabel": "Zpráva analýzy sněhové hromady (PDF)",
+        "geojsonLabel": "Geometrie sněhové hromady (GeoJSON)",
+        "analysisResultLabel": "Výsledky analýzy (JSON / CSV)",
+        "fileSuffixLabel": "Přípona názvu souboru",
+        "fileSuffixPlaceholder": "Pro výchozí příponu ponechte prázdné",
+        "fileSuffixCurrent": "Ponechte prázdné pro použití tohoto:",
+        "requiredFilesLabel": "Souhrn a parametry vyžadují existující zprávu nebo možnost PDF."
+      }
+    },
+    "graph1": {
+      "graphTitle": "Aktuální množství tavené vody",
+      "yaxisTitle": "Denní tavená voda [m³]",
+      "xaxisTitle": "Den v roce"
+    },
+    "graph2": {
+      "graphTitle": "Povětrnostní podmínky",
+      "yaxisTitle": "Meteorologická data",
+      "yaxisTitle1": "Teplota",
+      "yaxisTitle2": "Srážky",
+      "yaxisTitle3": "Doba slunečního svitu",
+      "xaxisTitle": "Den v roce"
+    },
+    "pdf": {
+      "page": "Strana",
+      "titlePage": {
+        "subTitle": "Analýza tání sněhu",
+        "subTitle2": "Výsledky výpočtu tání sněhu",
+        "dateTitle": "Datum provedení výpočtu:"
+      },
+      "tableSection": "Tabulka s výsledky analýzy tání sněhu",
+      "diagramSection": "Diagram s výsledky analýzy tání sněhu",
+      "imageSection": "Obrázky s výsledky analýzy tání sněhu",
+      "tableHeader": {
+        "col0": "Datum",
+        "col1": "Zbývající objem sněhu [m³]",
+        "col2": "Zbývající výška",
+        "col3": "Tavená voda [m³]",
+        "col4": "Celkové množství tavené vody [m³]",
+        "col5": "Teplota okolí [°C]",
+        "col6": "Srážky [mm]",
+        "col7": "Sluneční svit [h]"
+      },
+      "bafSite": "Výpočetní oblast",
+      "bafSiteCaption": "Obrázek: Snímek obrazovky výpočetní oblasti",
+      "bafSiteCaptionSRC": "Zdroj:",
+      "bafSiteCaptionExport": "Polygonová geometrie výpočetní oblasti",
+      "lastPage": {
+        "title": "Informace",
+        "text": "Analýza sněhové hromady je nástroj, který umožňuje uživatelům vytvořit sněhovou hromadu ve 3D scéně. Umožňuje analýzu tání s ohledem na povětrnostní podmínky a vypočítává množství tavené vody vzniklé táním. Analýza bere v úvahu různé faktory, jako je výška sněhové hromady, datum analýzy a podmínky prostředí. Výsledky jsou prezentovány ve formě diagramů a tabulek znázorňujících rychlost tání a další relevantní informace. Uživatelé mohou také exportovat výsledky jako PDF pro další analýzu nebo tvorbu zpráv."
+      }
+    },
+    "roofTypes": {
+      "snowpile": "sněhová hromada",
+      "saddleRoof": "Sedlová střecha",
+      "hipRoof": "Valbová střecha",
+      "nurRoof": "Pultová střecha",
+      "shedRoof": "Skleníková střecha",
+      "offsetShedRoof": "Posunutá skleníková střecha",
+      "flatRoof": "Plochá střecha",
+      "butterflyRoof": "Motýlová střecha",
+      "barrelRoof": "Sudová střecha",
+      "mansardRoof": "Mansardová střecha",
+      "saltboxRoof": "Sůlboxová střecha",
+      "sawtoothRoof": "Zubová střecha",
+      "parallelRoof": "Paralelní střecha",
+      "gableOnGableRoof": "Gable-on-gable střecha"
+    }
+  }
+}

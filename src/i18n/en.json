@@ -1,0 +1,121 @@
+{
+  "snowpile": {
+    "title": "Snow Pile Analysis",
+    "description": "The Snow Pile Analysis is a tool that allows users to create a snow pile in a 3D scene. It enables melt analysis by taking weather conditions into account and calculates the amount of meltwater resulting from the melting of the snow pile.",
+    "help-title": "Snow Pile Melt Analysis",
+    "date": "Date",
+    "dateTooltip": "Select the date from which the snow melt analysis should be performed.",
+    "location": "location",
+    "type": "Snowpile Type",
+    "locationTooltip": "Select the location of the snow pile. This is used for the melt analysis.",
+    "typeTooltip": "Select the type of the snow pile. This is used for the melt analysis.",
+    "height": "Snow Pile Height",
+    "heightTooltip": "Height of the snow pile in meters. This is used for the melt analysis.",
+    "hint1": {
+      "title": "Select Date",
+      "description": "A snow melt analysis will be performed for the selected date."
+    },
+    "hint2": {
+      "title": "Select Type",
+      "description": "Draw an area on the map where the snow pile is located."
+    },
+    "hint3": {
+      "title": "Optional: Enter Polygon Geometry",
+      "description": "Enter the polygon geometry of the snow pile. Maximum 4 points..."
+    },
+    "drawGeometry": "Draw Snow Pile",
+    "drawGeometryTooltip": "Draw the snow pile on the map to perform a melt analysis for it.",
+    "enterGeometry": "Enter Polygon Geometry",
+    "enterGeometryTooltip": "Enter the polygon geometry of the snow pile. Maximum 4 points...",
+    "showResults": "Show Results",
+    "runAnalysis": "Start",
+    "draw": {
+      "areaSelection": "Select Area",
+      "drawBBox": "Draw Rectangle",
+      "drawPolygon": "Draw Polygon"
+    },
+    "resultWindow": {
+      "title": "Snowpile Analysis Results",
+      "description": "The results of the Snowpile analysis are displayed here. You can view the results for different time periods and lighting conditions.",
+      "exportButton": "Export Results",
+      "exportButtonTooltip": "Exports the Snowpile analysis results as a PDF",
+      "time": "Time",
+      "overlayTitle": "Enter file name and choose export option for images",
+      "overlayText": "Please enter the file name for the export here. The file name will be supplemented with the date of the calculation. The file name can, for example, indicate whether the calculation was carried out before or after planning. \n Setting for whether the scene images should be integrated into the PDF.",
+      "overlayButtonLabel": "File name",
+      "exportImagesLabel": "Export Diagrams",
+      "exportImagesTooltip": "Integrates the diagrams of the Snowpile analysis into the PDF export (requires more time)",
+      "uploadButton": "URBREATH",
+      "uploadButtonTooltip": "Upload report to URBREATH MinIO",
+      "uploadDialog": {
+        "title": "Upload to MinIO",
+        "selectItems": "Select the items you want to upload.",
+        "reportLabel": "Snowpile analysis report (PDF)",
+        "geojsonLabel": "Geometry of the snow pile (GeoJSON)",
+        "analysisResultLabel": "Analysis results (JSON / CSV)",
+        "fileSuffixLabel": "Suffix for file names",
+        "fileSuffixPlaceholder": "Leave empty for default suffix",
+        "fileSuffixCurrent": "Leave empty to use this:",
+        "requiredFilesLabel": "Summary and parameters require an existing report or the PDF option."
+      }
+    },
+    "graph1": {
+      "graphTitle": "Current meltwater",
+      "yaxisTitle": "daily meltwater [m³]",
+      "xaxisTitle": "day of the year"
+    },
+    "graph2": {
+      "graphTitle": "Weather conditions",
+      "yaxisTitle": "weather data",
+      "yaxisTitle1": "temperature",
+      "yaxisTitle2": "precipitation",
+      "yaxisTitle3": "sunshine duration",
+      "xaxisTitle": "day of the year"
+    },
+    "pdf": {
+      "page": "Page",
+      "titlePage": {
+        "subTitle": "Snow Melt Analysis",
+        "subTitle2": "Results of the Snow Melt Calculation",
+        "dateTitle": "Date the calculation was performed:"
+      },
+      "tableSection": "Table with the results of the snow melt analysis",
+      "diagramSection": "Diagram with the results of the snow melt analysis",
+      "imageSection": "Images with the results of the snow melt analysis",
+      "tableHeader": {
+        "col0": "Date",
+        "col1": "Remaining snow volume [m³]",
+        "col2": "Remaining height",
+        "col3": "Meltwater [m³]",
+        "col4": "Total meltwater [m³]",
+        "col5": "Ambient temperature [°C]",
+        "col6": "Rainfall [mm]",
+        "col7": "Sunshine [h]"
+      },
+      "bafSite": "Calculation area",
+      "bafSiteCaption": "Image: Screenshot of the calculation area",
+      "bafSiteCaptionSRC": "Source:",
+      "bafSiteCaptionExport": "Polygon geometry of the calculation area",
+      "lastPage": {
+        "title": "Information",
+        "text": "The snow pile analysis is a tool that allows users to create a snow pile in a 3D scene. It enables melt analysis by taking weather conditions into account and calculates the amount of meltwater resulting from the melting of the snow pile. The analysis considers various factors such as the height of the snow pile, the date of the analysis, and the environmental conditions. The results are presented in the form of diagrams and tables that show the melt rate and other relevant information. Users can also export the results as a PDF for further analysis or reporting."
+      }
+    },
+    "roofTypes": {
+      "snowpile": "Snowpile",
+      "saddleRoof": "Saddle Roof",
+      "hipRoof": "Hip Roof",
+      "nurRoof": "Pent roof",
+      "shedRoof": "Shed roof",
+      "offsetShedRoof": "Offset shed roof",
+      "flatRoof": "Flat roof",
+      "butterflyRoof": "Butterfly",
+      "barrelRoof": "Barrel roof",
+      "mansardRoof": "Mansard roof",
+      "saltboxRoof": "Saltbox roof",
+      "sawtoothRoof": "Sawtooth roof",
+      "parallelRoof": "Parallel roof",
+      "gableOnGableRoof": "Gable-on-gable roof"
+    }
+  }
+}

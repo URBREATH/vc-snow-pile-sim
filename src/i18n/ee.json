@@ -1,0 +1,121 @@
+{
+  "snowpile": {
+    "title": "Lumekuhja analüüs",
+    "description": "Lumekuhja analüüs on tööriist, mis võimaldab kasutajatel luua 3D-stseenis lumekuhja. See võimaldab sulamisanalüüsi, arvestades ilmastikuolusid, ning arvutab sulamisest tekkiva sulavee koguse.",
+    "help-title": "Lumekuhja sulamisanalüüs",
+    "date": "Kuupäev",
+    "dateTooltip": "Vali kuupäev, millest alates lumekuhja sulamisanalüüsi tehakse.",
+    "location": "Asukoht",
+    "type": "Lumekuhja tüüp",
+    "locationTooltip": "Vali lumekuhja asukoht. Seda kasutatakse sulamisanalüüsis.",
+    "typeTooltip": "Vali lumekuhja tüüp. Seda kasutatakse sulamisanalüüsis.",
+    "height": "Lumekuhja kõrgus",
+    "heightTooltip": "Lumekuhja kõrgus meetrites. Seda kasutatakse sulamisanalüüsis.",
+    "hint1": {
+      "title": "Vali kuupäev",
+      "description": "Valitud kuupäeva kohta tehakse lumekuhja sulamisanalüüs."
+    },
+    "hint2": {
+      "title": "Vali tüüp",
+      "description": "Joonista kaardile ala, kus lumekuhja asub."
+    },
+    "hint3": {
+      "title": "Valikuline: sisesta polügooni geomeetria",
+      "description": "Sisesta lumekuhja polügooni geomeetria. Maksimum 4 punkti..."
+    },
+    "drawGeometry": "Joonista lumekuhja",
+    "drawGeometryTooltip": "Joonista lumekuhja kaardile, et teha sulamisanalüüs.",
+    "enterGeometry": "Sisesta polügooni geomeetria",
+    "enterGeometryTooltip": "Sisesta lumekuhja polügooni geomeetria. Maksimum 4 punkti...",
+    "showResults": "Näita tulemusi",
+    "runAnalysis": "Käivita",
+    "draw": {
+      "areaSelection": "Vali ala",
+      "drawBBox": "Joonista ristkülik",
+      "drawPolygon": "Joonista polügoon"
+    },
+    "resultWindow": {
+      "title": "Lumekuhja analüüsi tulemused",
+      "description": "Siin kuvatakse lumekuhja analüüsi tulemused. Tulemusi saab vaadata erinevate ajaperioodide ja valgustingimuste järgi.",
+      "exportButton": "Ekspordi tulemused",
+      "exportButtonTooltip": "Ekspordib lumekuhja analüüsi tulemused PDF-failina",
+      "time": "Aeg",
+      "overlayTitle": "Sisesta failinimi ja vali piltide ekspordivalik",
+      "overlayText": "Palun sisesta siia ekspordi failinimi. Failinimele lisatakse arvutuse kuupäev. Failinimi võib näiteks viidata, kas arvutus tehti enne või pärast planeerimist.\n Seadistus selle kohta, kas stseenipilte integreeritakse PDF-i.",
+      "overlayButtonLabel": "Failinimi",
+      "exportImagesLabel": "Ekspordi diagrammid",
+      "exportImagesTooltip": "Integreerib lumekuhja analüüsi diagrammid PDF-ekspordi hulka (vajab rohkem aega)",
+      "uploadButton": "URBREATH",
+      "uploadButtonTooltip": "Lae raport üles URBREATH MinIO-sse",
+      "uploadDialog": {
+        "title": "Üleslaadimine MinIO-sse",
+        "selectItems": "Vali üleslaaditavad elemendid.",
+        "reportLabel": "Lumekuhja analüüsi raport (PDF)",
+        "geojsonLabel": "Lumekuhja geomeetria (GeoJSON)",
+        "analysisResultLabel": "Analüüsi tulemused (JSON / CSV)",
+        "fileSuffixLabel": "Failinime sufiks",
+        "fileSuffixPlaceholder": "Jäta tühjaks vaikimisi sufiksi jaoks",
+        "fileSuffixCurrent": "Jäta tühjaks, et kasutada seda:",
+        "requiredFilesLabel": "Kokkuvõte ja parameetrid nõuavad olemasolevat raportit või PDF-valikut."
+      }
+    },
+    "graph1": {
+      "graphTitle": "Praegune sulavesi",
+      "yaxisTitle": "Päevane sulavesi [m³]",
+      "xaxisTitle": "Aasta päev"
+    },
+    "graph2": {
+      "graphTitle": "Ilmastikutingimused",
+      "yaxisTitle": "Ilmaandmed",
+      "yaxisTitle1": "Temperatuur",
+      "yaxisTitle2": "Sademed",
+      "yaxisTitle3": "Päikesepaiste kestus",
+      "xaxisTitle": "Aasta päev"
+    },
+    "pdf": {
+      "page": "Lehekülg",
+      "titlePage": {
+        "subTitle": "Lumetuse analüüs",
+        "subTitle2": "Lumesulamise arvutuse tulemused",
+        "dateTitle": "Arvutuse teostamise kuupäev:"
+      },
+      "tableSection": "Tabel lumetuse analüüsi tulemustega",
+      "diagramSection": "Diagramm lumetuse analüüsi tulemustega",
+      "imageSection": "Pildid lumetuse analüüsi tulemustega",
+      "tableHeader": {
+        "col0": "Kuupäev",
+        "col1": "Allesjäänud lume maht [m³]",
+        "col2": "Allesjäänud kõrgus",
+        "col3": "Sulavesi [m³]",
+        "col4": "Kogusulavesi [m³]",
+        "col5": "Ümbritsev temperatuur [°C]",
+        "col6": "Sademed [mm]",
+        "col7": "Päikesepaiste [h]"
+      },
+      "bafSite": "Arvutusala",
+      "bafSiteCaption": "Pilt: Arvutusala kuvatõmmis",
+      "bafSiteCaptionSRC": "Allikas:",
+      "bafSiteCaptionExport": "Arvutusala polügooni geomeetria",
+      "lastPage": {
+        "title": "Teave",
+        "text": "Lumekuhja analüüs on tööriist, mis võimaldab kasutajatel luua 3D-stseenis lumekuhja. See võimaldab sulamisanalüüsi ning arvutab sulamisest tekkinud vee hulga. Analüüs arvestab selliseid tegureid nagu lumekuhja kõrgus, analüüsi kuupäev ja keskkonnatingimused. Tulemused esitatakse diagrammide ja tabelitena, mis näitavad sulamiskiirust ja muud asjakohast teavet. Kasutajad saavad tulemused eksportida PDF-failina edasiseks analüüsiks või aruandluseks."
+      }
+    },
+    "roofTypes": {
+      "snowpile": "Lumekuhja",
+      "saddleRoof": "Sadulkatuse",
+      "hipRoof": "Valmkatuse",
+      "nurRoof": "Pultkatuse",
+      "shedRoof": "Skurkatuse",
+      "offsetShedRoof": "Forskudt skurkatuse",
+      "flatRoof": "Lamekatuse",
+      "butterflyRoof": "Liblikakatuse",
+      "barrelRoof": "Tünnkatuse",
+      "mansardRoof": "Mansardkatuse",
+      "saltboxRoof": "Soolakastikatuse",
+      "sawtoothRoof": "Saekujuline katuse",
+      "parallelRoof": "Paralleelkatuse",
+      "gableOnGableRoof": "Gable-on-gable katuse"
+    }
+  }
+}

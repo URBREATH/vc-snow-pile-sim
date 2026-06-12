@@ -1,0 +1,121 @@
+{
+  "snowpile": {
+    "title": "Análisis de Acumulación de Nieve",
+    "description": "El Análisis de Acumulación de Nieve es una herramienta que permite a los usuarios crear una pila de nieve en una escena 3D. Permite el análisis de deshielo teniendo en cuenta las condiciones meteorológicas y calcula la cantidad de agua resultante del derretimiento de la pila de nieve.",
+    "help-title": "Análisis de Deshielo de la Pila de Nieve",
+    "date": "Fecha",
+    "dateTooltip": "Seleccione la fecha desde la cual debe realizarse el análisis de deshielo.",
+    "location": "Ubicación",
+    "type": "Tipo de pila de nieve",
+    "locationTooltip": "Seleccione la ubicación de la pila de nieve. Esto se utiliza para el análisis de deshielo.",
+    "typeTooltip": "Seleccione el tipo de pila de nieve. Esto se utiliza para el análisis de deshielo.",
+    "height": "Altura de la pila de nieve",
+    "heightTooltip": "Altura de la pila de nieve en metros. Esto se utiliza para el análisis de deshielo.",
+    "hint1": {
+      "title": "Seleccionar fecha",
+      "description": "Se realizará un análisis de deshielo para la fecha seleccionada."
+    },
+    "hint2": {
+      "title": "Seleccionar tipo",
+      "description": "Dibuje un área en el mapa donde se encuentra la pila de nieve."
+    },
+    "hint3": {
+      "title": "Opcional: Ingresar geometría del polígono",
+      "description": "Ingrese la geometría del polígono de la pila de nieve. Máximo 4 puntos..."
+    },
+    "drawGeometry": "Dibujar pila de nieve",
+    "drawGeometryTooltip": "Dibuje la pila de nieve en el mapa para realizar un análisis de deshielo.",
+    "enterGeometry": "Ingresar geometría de polígono",
+    "enterGeometryTooltip": "Ingrese la geometría del polígono de la pila de nieve. Máximo 4 puntos...",
+    "showResults": "Mostrar resultados",
+    "runAnalysis": "Iniciar",
+    "draw": {
+      "areaSelection": "Seleccionar área",
+      "drawBBox": "Dibujar rectángulo",
+      "drawPolygon": "Dibujar polígono"
+    },
+    "resultWindow": {
+      "title": "Resultados del Análisis de la Pila de Nieve",
+      "description": "Aquí se muestran los resultados del análisis de la pila de nieve. Puede ver los resultados para diferentes períodos de tiempo y condiciones de iluminación.",
+      "exportButton": "Exportar resultados",
+      "exportButtonTooltip": "Exporta los resultados del análisis de la pila de nieve como PDF",
+      "time": "Hora",
+      "overlayTitle": "Ingrese el nombre del archivo y elija la opción de exportación de imágenes",
+      "overlayText": "Ingrese aquí el nombre del archivo para la exportación. El nombre del archivo se complementará con la fecha del cálculo. Por ejemplo, el nombre puede indicar si el cálculo se realizó antes o después de la planificación.\n Configuración para decidir si las imágenes de la escena deben integrarse en el PDF.",
+      "overlayButtonLabel": "Nombre del archivo",
+      "exportImagesLabel": "Exportar diagramas",
+      "exportImagesTooltip": "Integra los diagramas del análisis en la exportación PDF (requiere más tiempo)",
+      "uploadButton": "URBREATH",
+      "uploadButtonTooltip": "Subir informe a URBREATH MinIO",
+      "uploadDialog": {
+        "title": "Subir a MinIO",
+        "selectItems": "Seleccione los elementos que desea subir.",
+        "reportLabel": "Informe del análisis de la pila de nieve (PDF)",
+        "geojsonLabel": "Geometría de la pila de nieve (GeoJSON)",
+        "analysisResultLabel": "Resultados del análisis (JSON / CSV)",
+        "fileSuffixLabel": "Sufijo para nombres de archivo",
+        "fileSuffixPlaceholder": "Dejar vacío para el sufijo predeterminado",
+        "fileSuffixCurrent": "Dejar vacío para usar este:",
+        "requiredFilesLabel": "El resumen y los parámetros requieren un informe existente o la opción PDF."
+      }
+    },
+    "graph1": {
+      "graphTitle": "Agua de deshielo actual",
+      "yaxisTitle": "Agua de deshielo diaria [m³]",
+      "xaxisTitle": "Día del año"
+    },
+    "graph2": {
+      "graphTitle": "Condiciones meteorológicas",
+      "yaxisTitle": "Datos meteorológicos",
+      "yaxisTitle1": "Temperatura",
+      "yaxisTitle2": "Precipitación",
+      "yaxisTitle3": "Duración de la luz solar",
+      "xaxisTitle": "Día del año"
+    },
+    "pdf": {
+      "page": "Página",
+      "titlePage": {
+        "subTitle": "Análisis de deshielo",
+        "subTitle2": "Resultados del cálculo de deshielo",
+        "dateTitle": "Fecha en la que se realizó el cálculo:"
+      },
+      "tableSection": "Tabla con los resultados del análisis de deshielo",
+      "diagramSection": "Diagrama con los resultados del análisis de deshielo",
+      "imageSection": "Imágenes con los resultados del análisis de deshielo",
+      "tableHeader": {
+        "col0": "Fecha",
+        "col1": "Volumen de nieve restante [m³]",
+        "col2": "Altura restante",
+        "col3": "Agua de deshielo [m³]",
+        "col4": "Agua de deshielo total [m³]",
+        "col5": "Temperatura ambiente [°C]",
+        "col6": "Precipitación [mm]",
+        "col7": "Horas de sol [h]"
+      },
+      "bafSite": "Área de cálculo",
+      "bafSiteCaption": "Imagen: Captura de la zona de cálculo",
+      "bafSiteCaptionSRC": "Fuente:",
+      "bafSiteCaptionExport": "Geometría poligonal del área de cálculo",
+      "lastPage": {
+        "title": "Información",
+        "text": "El análisis de la pila de nieve es una herramienta que permite crear una acumulación de nieve en una escena 3D. Permite analizar la fusión de la nieve teniendo en cuenta las condiciones meteorológicas y calcula el agua de deshielo producida. La herramienta considera factores como la altura de la pila de nieve, la fecha del análisis y las condiciones ambientales. Los resultados se presentan en diagramas y tablas que muestran la velocidad de deshielo y otra información relevante. También es posible exportar los resultados en PDF para análisis o informes adicionales."
+      }
+    },
+    "roofTypes": {
+      "snowpile": "Pila de nieve",
+      "saddleRoof": "Techo a dos aguas",
+      "hipRoof": "Techo a cuatro aguas",
+      "nurRoof": "Techo a un agua",
+      "shedRoof": "Techo de cobertizo",
+      "offsetShedRoof": "Techo de cobertizo desplazado",
+      "flatRoof": "Techo plano",
+      "butterflyRoof": "Techo mariposa",
+      "barrelRoof": "Techo de barril",
+      "mansardRoof": "Techo mansarda",
+      "saltboxRoof": "Techo saltbox",
+      "sawtoothRoof": "Techo dentado",
+      "parallelRoof": "Techo paralelo",
+      "gableOnGableRoof": "Techo a dos aguas sobre dos aguas"
+    }
+  }
+}

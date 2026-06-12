@@ -1,0 +1,121 @@
+{
+  "snowpile": {
+    "title": "Sneeuwhoopanalyse",
+    "description": "De Sneeuwhoopanalyse is een tool waarmee gebruikers een sneeuwhoop kunnen creëren in een 3D‑scène. Het maakt een smeltanalyse mogelijk waarbij rekening wordt gehouden met de weersomstandigheden en berekent de hoeveelheid smeltwater die ontstaat door het smelten van de sneeuwhoop.",
+    "help-title": "Analyse van smeltende sneeuwhoop",
+    "date": "Datum",
+    "dateTooltip": "Selecteer de datum vanaf wanneer de sneeuwsmeltanalyse moet worden uitgevoerd.",
+    "location": "Locatie",
+    "type": "Type sneeuwhoop",
+    "locationTooltip": "Selecteer de locatie van de sneeuwhoop. Dit wordt gebruikt voor de smeltanalyse.",
+    "typeTooltip": "Selecteer het type sneeuwhoop. Dit wordt gebruikt voor de smeltanalyse.",
+    "height": "Hoogte van de sneeuwhoop",
+    "heightTooltip": "Hoogte van de sneeuwhoop in meters. Dit wordt gebruikt voor de smeltanalyse.",
+    "hint1": {
+      "title": "Selecteer datum",
+      "description": "Er wordt een sneeuwsmeltanalyse uitgevoerd voor de geselecteerde datum."
+    },
+    "hint2": {
+      "title": "Selecteer type",
+      "description": "Teken een gebied op de kaart waar de sneeuwhoop zich bevindt."
+    },
+    "hint3": {
+      "title": "Optioneel: voer polygoongeometrie in",
+      "description": "Voer de polygoongeometrie van de sneeuwhoop in. Maximaal 4 punten..."
+    },
+    "drawGeometry": "Sneeuwhoop tekenen",
+    "drawGeometryTooltip": "Teken de sneeuwhoop op de kaart om een smeltanalyse uit te voeren.",
+    "enterGeometry": "Polygoongeometrie invoeren",
+    "enterGeometryTooltip": "Voer de polygoongeometrie van de sneeuwhoop in. Maximaal 4 punten...",
+    "showResults": "Resultaten tonen",
+    "runAnalysis": "Start",
+    "draw": {
+      "areaSelection": "Gebied selecteren",
+      "drawBBox": "Rechthoek tekenen",
+      "drawPolygon": "Polygoon tekenen"
+    },
+    "resultWindow": {
+      "title": "Resultaten van de sneeuwhoopanalyse",
+      "description": "De resultaten van de sneeuwhoopanalyse worden hier weergegeven. Je kunt resultaten bekijken voor verschillende tijdsperioden en lichtomstandigheden.",
+      "exportButton": "Resultaten exporteren",
+      "exportButtonTooltip": "Exporteert de resultaten van de sneeuwhoopanalyse als PDF",
+      "time": "Tijd",
+      "overlayTitle": "Voer bestandsnaam in en kies exportopties voor afbeeldingen",
+      "overlayText": "Voer hier de bestandsnaam in voor de export. De bestandsnaam wordt aangevuld met de datum van de berekening. De naam kan bijvoorbeeld aangeven of de berekening vóór of na de planning werd uitgevoerd.\n Instelling voor het al dan niet opnemen van scènebeelden in de PDF.",
+      "overlayButtonLabel": "Bestandsnaam",
+      "exportImagesLabel": "Diagrammen exporteren",
+      "exportImagesTooltip": "Integreert de diagrammen van de sneeuwhoopanalyse in de PDF‑export (duurt langer)",
+      "uploadButton": "URBREATH",
+      "uploadButtonTooltip": "Rapport uploaden naar URBREATH MinIO",
+      "uploadDialog": {
+        "title": "Uploaden naar MinIO",
+        "selectItems": "Selecteer de items die je wilt uploaden.",
+        "reportLabel": "Rapport sneeuwhoopanalyse (PDF)",
+        "geojsonLabel": "Geometrie van de sneeuwhoop (GeoJSON)",
+        "analysisResultLabel": "Analyseresultaten (JSON / CSV)",
+        "fileSuffixLabel": "Achtervoegsel voor bestandsnamen",
+        "fileSuffixPlaceholder": "Laat leeg voor standaardachtervoegsel",
+        "fileSuffixCurrent": "Laat leeg om dit te gebruiken:",
+        "requiredFilesLabel": "Samenvatting en parameters vereisen een bestaand rapport of de PDF‑optie."
+      }
+    },
+    "graph1": {
+      "graphTitle": "Huidige hoeveelheid smeltwater",
+      "yaxisTitle": "Dagelijks smeltwater [m³]",
+      "xaxisTitle": "Dag van het jaar"
+    },
+    "graph2": {
+      "graphTitle": "Weersomstandigheden",
+      "yaxisTitle": "Weersgegevens",
+      "yaxisTitle1": "Temperatuur",
+      "yaxisTitle2": "Neerslag",
+      "yaxisTitle3": "Zonneschijnduur",
+      "xaxisTitle": "Dag van het jaar"
+    },
+    "pdf": {
+      "page": "Pagina",
+      "titlePage": {
+        "subTitle": "Analyse van sneeuwsmelting",
+        "subTitle2": "Resultaten van de sneeuwsmeltberekening",
+        "dateTitle": "Datum waarop de berekening is uitgevoerd:"
+      },
+      "tableSection": "Tabel met de resultaten van de sneeuwsmeltanalyse",
+      "diagramSection": "Diagram met de resultaten van de sneeuwsmeltanalyse",
+      "imageSection": "Afbeeldingen met de resultaten van de sneeuwsmeltanalyse",
+      "tableHeader": {
+        "col0": "Datum",
+        "col1": "Resterend sneeuwvolume [m³]",
+        "col2": "Resterende hoogte",
+        "col3": "Smeltwater [m³]",
+        "col4": "Totaal smeltwater [m³]",
+        "col5": "Omgevingstemperatuur [°C]",
+        "col6": "Neerslag [mm]",
+        "col7": "Zonuren [h]"
+      },
+      "bafSite": "Berekeningsgebied",
+      "bafSiteCaption": "Afbeelding: screenshot van het berekeningsgebied",
+      "bafSiteCaptionSRC": "Bron:",
+      "bafSiteCaptionExport": "Polygoongeometrie van het berekeningsgebied",
+      "lastPage": {
+        "title": "Informatie",
+        "text": "De sneeuwhoopanalyse is een tool waarmee gebruikers een sneeuwhoop in een 3D‑scène kunnen creëren. Ze maakt een smeltanalyse mogelijk door rekening te houden met weersomstandigheden en berekent de hoeveelheid smeltwater. De analyse houdt rekening met factoren zoals de hoogte van de sneeuwhoop, de datum van de analyse en de omgevingscondities. De resultaten worden weergegeven in diagrammen en tabellen die de smelttempo’s en andere relevante informatie tonen. Resultaten kunnen ook als PDF worden geëxporteerd voor verdere analyse of rapportage."
+      }
+    },
+    "roofTypes": {
+      "snowpile": "sneeuwhoop",
+      "saddleRoof": "Satteldak",
+      "hipRoof": "Walmdak",
+      "nurRoof": "Pultdak",
+      "shedRoof": "Sheddak",
+      "offsetShedRoof": "Versprongen sheddak",
+      "flatRoof": "Plat dak",
+      "butterflyRoof": "Vlinderdak",
+      "barrelRoof": "Tonvormig dak",
+      "mansardRoof": "Mansardedak",
+      "saltboxRoof": "Zadeldak",
+      "sawtoothRoof": "Zaagtanddak",
+      "parallelRoof": "Parallel dak",
+      "gableOnGableRoof": "Gable-on-gable dak"
+    }
+  }
+}
