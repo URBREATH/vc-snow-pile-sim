@@ -55,4 +55,4 @@ The core logic integrates meteorological factors to model the snowpack lifecycle
 1. Open the Tool: Click the snowmelt icon in the VC Map toolbox to open the analysis window.
 1. Define Pile: Set the height, location, and date.
 1. Draw Area: Use the draw tool to mark the snow pile's location on the map.
-1. Run & Analyze: View the calculated waterflow layer on the map and check the results window for detailed charts and report exports.
+1. Run & Analyze: View the calculated melting results in a separate window for detailed charts and report exports.
